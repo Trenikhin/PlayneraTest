@@ -1,0 +1,31 @@
+// Zenject
+// UniRx (R3)
+// ObjView / ObjPresenter
+// ObjGrabber сделать сервисом для перетаскивания
+// ObjFacade - в фасаде все методы для работы с перетаскиваемым предметом (через ObjFacade.TryGetComponent вытаскивать DragComponent)
+// Добавить спрайт яблока
+// Доделать сцену
+// Cinemachine - передвижение камеры по сцене (бордеры для камеры)
+
+public class TouchHandler: Mono, IBeginDragHandler, IDragHandler, IEndDragHandler
+{
+    ObjGrabber _grabber;
+    
+    ...
+}
+
+public class ObjGrabber
+{
+    public void StartGrab();
+    public void FinishGrab();
+}
+
+public class DragComponent
+{
+    public void BeginDrag();
+    public void Drag( Vector3 pos );
+    public void FinishGrab();
+}
+
+
+
