@@ -1,8 +1,5 @@
 # PlayneraTest
-
-
-## Unity 2022.3.54f1
-### 3rd party assets: Zenject, UniRx
+## Unity 2022.3.54f1 / 3rd party assets: Zenject, UniRx
 
 # Описание: 
 #### Для написания тестового использолся компонентный подход. В качесте Di фреймворка Zenject
